@@ -25,7 +25,7 @@ const {_id, photo,name,cost } = spots;
 
         // update data  
 
-        fetch(`http://localhost:5000/spots/${_id}`, {
+        fetch(`https://asia-adventura-server.vercel.app/spots/${_id}`, {
             method: 'PUT',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(spots)
