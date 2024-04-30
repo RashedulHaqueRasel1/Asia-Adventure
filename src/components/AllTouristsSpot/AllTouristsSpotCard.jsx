@@ -12,8 +12,6 @@ const AllTouristsSpotCard = ({ spot }) => {
 
 
 
-
-
     return (
         <div>
 
