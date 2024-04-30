@@ -1,3 +1,4 @@
+import FQA from "../FQA/FQA";
 import TopFooter from "../Footer/TopFooter";
 import Hero from "../Hero/Hero";
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div>
 
             <Hero></Hero>
+            <FQA></FQA>
             <TopFooter></TopFooter>
             
             

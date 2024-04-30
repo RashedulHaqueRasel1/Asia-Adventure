@@ -87,8 +87,8 @@ const AllTouristsSpot = () => {
             <div className="mx-auto container items-center   mt-4 mb-4  text-2xl font-bold text-center    ">
                 <select className="select select-primary w-full max-w-xs">
                     <option disabled selected>Average Cost</option>
-                    <option >AS</option>
-                    <option onClick={() => handleDs(ds)} >DS</option>
+                    <option >Ascending</option>
+                    <option onClick={() => handleDs(ds)} >Descending</option>
 
                 </select>
             </div>
