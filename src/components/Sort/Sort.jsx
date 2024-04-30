@@ -49,7 +49,7 @@ const Sort = ({d}) => {
             <select className="select select-primary w-full max-w-xs">
                 <option disabled selected>Average Cost</option>
                 <option >Ascending</option>
-                <option >DS</option>
+                <option >Descending</option>
 
             </select>
         </div>
