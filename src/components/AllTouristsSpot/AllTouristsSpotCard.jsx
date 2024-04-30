@@ -1,4 +1,5 @@
- 
+import { Link } from "react-router-dom";
+
 
 
 
@@ -6,10 +7,12 @@
 const AllTouristsSpotCard = ({ spot }) => {
 
 
-    const { _id, email, name, photo, cost, visitors,description ,time ,seasonality} = spot;
+    const { _id, email, name, photo, cost, visitors, description, time, seasonality } = spot;
 
 
- 
+
+
+
 
     return (
         <div>
@@ -18,42 +21,55 @@ const AllTouristsSpotCard = ({ spot }) => {
             <div className="mx-auto container ">
                 <div className=" h-full   " data-aos="fade-up" data-aos-duration="3000"  >
 
-                    <div className="flex flex-col  max-w-lg p-6 space-y-6 overflow-hidden  rounded-lg shadow-md    " style={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }} >
+                    <div className=" flex flex-col rounded-3xl  justify-center items-center   p-2      " style={{ boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" }} >
 
-                        <div className=" rgba(0, 0, 0, 0.56) 0px 22px 70px 4px" >
-                            <div>
-                                <img src={photo} alt="" className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500 rounded-lg relative" data-aos="fade-up" data-aos-duration="3000" />
-                                <div className="">
-                                    <span className="absolute lg:-mt-96 lg:ml-80 text-white p-2 bg-red-600 rounded-full">{seasonality}</span>
+                        <div className=" ">
+
+
+
+                            <div className="card" >
+                                <figure className="px-10 pt-10">
+                                    <img src={photo} alt="Shoes" className="rounded-xl w-full md:w-48 lg:w-96 h-72 " />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title">{name}</h2>
+                                    <p>{description}</p>
+
+                                    <div className="flex lg:justify-end md:justify-center justify-end w-80 lg:w-96 md:w-48  mt-4 ">
+                                        <p> <span className="font-semibold">Average Cost :</span> {cost}</p>
+                                        <p className="font-semibold"> <span>Total Visitors Per Year :</span> {visitors}</p>
+                                    </div>
+
+                                    <div className="flex lg:justify-end md:justify-center justify-end w-80 lg:w-96 md:w-48 mt-4  ">
+                                        <p> <span className="font-semibold">Travel Time :</span> {time}</p>
+                                        <p className="font-semibold"> <span>Seasonality :</span> {seasonality}</p>
+                                    </div>
+
+                                    <div className="card-actions mt-4">
+                                        <Link to={'/details'}>
+                                            <button className="btn btn-primary">Details</button>
+                                        </Link>
+                                    </div>
                                 </div>
-                                <h2 className="mb-1 text-2xl font-semibold" data-aos="fade-up" data-aos-duration="2900">name{name}</h2>
-                                <h2 className="mb-1 text-2xl font-semibold" data-aos="fade-up" data-aos-duration="2900">cos{cost}</h2>
-                                <p className="text-xl dark:text-gray-600  " data-aos="fade-up" data-aos-duration="2900">des{description}</p>
-                                <p className="text-xl dark:text-gray-600  " data-aos="fade-up" data-aos-duration="2900">Visit{visitors}</p>
-                                <p className="text-xl dark:text-gray-600  " data-aos="fade-up" data-aos-duration="2900">Visit{time}</p>
                             </div>
 
- 
 
 
 
 
 
 
-
-
-                            <div>
-                                <div className="join join-vertical">
-                                    <button className="btn join-item">View</button>
- 
-                                </div>
-
-                            </div>
                         </div>
                     </div>
+
+
+
                 </div>
 
+
+
             </div>
+ 
 
 
 

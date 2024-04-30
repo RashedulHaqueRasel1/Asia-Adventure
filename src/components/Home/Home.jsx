@@ -1,5 +1,5 @@
 import Hero from "../Hero/Hero";
-import Sort from "../Sort/Sort";
+
 
 
 
@@ -8,7 +8,7 @@ const Home = () => {
         <div>
 
             <Hero></Hero>
-            <Sort></Sort>
+            
             
         </div>
     );

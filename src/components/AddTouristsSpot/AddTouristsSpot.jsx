@@ -112,7 +112,7 @@ const AddTouristsSpot = () => {
                             <label className="label">
                                 <span className="label-text font-bold lg:ml-4">Select Country</span>
                             </label>
-                            <select className="select select-primary w-full lg:ml-4  lg:w-[600px] *: border-blue-300   focus:dark:border-blue-500 dark:bg-gray-400" {...register("country", { required: true })}>
+                            <select className="select select-primary w-full lg:ml-4  lg:w-[600px] *: border-blue-300   focus:dark:border-blue-500 dark:bg-gray-400" name="country" id="country" {...register("country", { required: true })}>
                                 <option disabled selected>Select Country</option>
                                 <option>Bangladesh</option>
                                 <option>Thailand</option>

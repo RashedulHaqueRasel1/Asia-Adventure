@@ -38,18 +38,7 @@ const MyList = () => {
 
 
             <div>
-                {/* <table className="table lex items-center gap-3">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Country</th>
-                            <th>Cost</th>
-                            <th>Visitors</th>
-                            <th>Travel Time</th>
-                            <th>Update & Delete</th>
-                        </tr>
-                    </thead>
-                </table> */}
+ 
 
 
                 {

@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { FaEdit } from "react-icons/fa";
 
 const MyListCard = ({ u, spots, setSpots }) => {
+    const navigate = useNavigate();
 
     const { _id, photo, name, cost, visitors, description, time, seasonality, country, location } = u;
 
@@ -32,6 +33,7 @@ const MyListCard = ({ u, spots, setSpots }) => {
                                 text: "Your Tourists Spots has been deleted.",
                                 icon: "success"
                             });
+                            navigate('/')
                         }
                         //   Ui Delete 
 
