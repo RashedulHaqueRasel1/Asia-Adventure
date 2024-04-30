@@ -3,7 +3,7 @@ import AllTouristsSpotCard from "./AllTouristsSpotCard";
 // import Sort from "../Sort/Sort";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useContext, useEffect, useState } from "react";
-import Sort from "../Sort/Sort";
+// import Sort from "../Sort/Sort";
 // import { useState } from "react";
 
 const AllTouristsSpot = () => {
