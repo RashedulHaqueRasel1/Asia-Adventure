@@ -26,9 +26,7 @@ const Update = () => {
 
     const onSubmit = (spots) => {
         // console.log(spots)
-
-        // const {_id} = spots;
-
+ 
 
         // update data  
 
@@ -42,7 +40,7 @@ const Update = () => {
             .then(data => {
                 console.log(data)
                 if (data.insertedId) {
-                    // alert("create success")
+ 
                     Swal.fire({
                         title: "Congratulations!",
                         text: "Tourist Spot Added Successfully",
@@ -58,15 +56,10 @@ const Update = () => {
 
 
 
-
-
-
-
-
+ 
 
     return (
         <div className="mx-auto container" >
-
 
 
             <div className="    shadow-2xl bg-base-100   p-10 space-y-6 rounded-xl container mx-auto   border-red-500" style={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}  >
@@ -234,13 +227,7 @@ const Update = () => {
                         </div>
 
                     </div>
-
-
-
-
-
  
-
                     <button className="btn w-full hover:outline text-[16px] bg-purple-500 hover:bg-transparent text-white hover:text-black mr-3"  >Update Spot</button>
 
                 </form>
