@@ -4,7 +4,7 @@
 
 const Sort = ({d}) => {
 
-    console.log(d)
+    // console.log(d)
 
     // const { user } = useContext(AuthContext);
 
@@ -48,7 +48,7 @@ const Sort = ({d}) => {
         <div className="mx-auto container items-center   mt-4 mb-4  text-2xl font-bold text-center    ">
             <select className="select select-primary w-full max-w-xs">
                 <option disabled selected>Average Cost</option>
-                <option >AS</option>
+                <option >Ascending</option>
                 <option >DS</option>
 
             </select>
