@@ -3,25 +3,20 @@ import AllTouristsSpotCard from "./AllTouristsSpotCard";
 // import Sort from "../Sort/Sort";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useContext, useEffect, useState } from "react";
+import Sort from "../Sort/Sort";
 // import { useState } from "react";
 
 const AllTouristsSpot = () => {
 
-    const spots = useLoaderData();
+    const loaderSpots = useLoaderData();
 
 
     // const { _id, email, name, photo, cost, visitors,description ,time ,seasonality} = spot;
-    // const [spots, setSpots] = useState(loaderSpots);
+    const [spots, setSpots] = useState(loaderSpots);
 
     // console.log(spots.photo)
 
-
-
-
-
-
-
-
+ 
 
     const { user } = useContext(AuthContext);
 
@@ -44,11 +39,7 @@ const AllTouristsSpot = () => {
 
 
 
-    const handleDs = (ds) => {
-
-        console.log(ds)
-
-    }
+ 
 
     useEffect(() => {
         fetch(`https://asia-adventura-server.vercel.app/spots/ds`)
@@ -62,20 +53,6 @@ const AllTouristsSpot = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return (
         <div className="mx-auto container">
 
@@ -84,14 +61,14 @@ const AllTouristsSpot = () => {
             </label>
 
             {/* Sort */}
-            <div className="mx-auto container items-center   mt-4 mb-4  text-2xl font-bold text-center    ">
+            {/* <div className="mx-auto container items-center   mt-4 mb-4  text-2xl font-bold text-center    ">
                 <select className="select select-primary w-full max-w-xs">
                     <option disabled selected>Average Cost</option>
                     <option >Ascending</option>
                     <option onClick={() => handleDs(ds)} >Descending</option>
 
                 </select>
-            </div>
+            </div> */}
 
             {/* Sort Data End */}
 
@@ -106,6 +83,13 @@ const AllTouristsSpot = () => {
 
                     ></AllTouristsSpotCard>)
                 }
+
+                {/* {
+                    ds.map(d => <Sort
+                    key={d._id}
+                    d={d}
+                    ></Sort>)
+                } */}
             </div>
 
 

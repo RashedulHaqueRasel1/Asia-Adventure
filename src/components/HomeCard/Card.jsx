@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 
 const Card = ({ item }) => {
-    console.log(item)
+    // console.log(item)
 
-    const { _id, email, name, photo, cost, visitors, description, time, seasonality } = item;
+    const {  name, photo, cost, visitors, description, time, seasonality } = item;
 
 
     return (

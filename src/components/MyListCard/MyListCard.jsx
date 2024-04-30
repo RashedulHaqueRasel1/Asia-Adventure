@@ -67,7 +67,7 @@ const MyListCard = ({ u, spots, setSpots }) => {
                             <th>Cost</th>
                             <th>Visitors</th>
                             <th>Travel Time</th>
-                            <th>Update & Delete</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>

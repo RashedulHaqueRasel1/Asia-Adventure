@@ -26,7 +26,7 @@ const Registration = () => {
     const onSubmit = (data) => {
         console.log(data)
 
-        const { email, password } = data;
+        const { email, password, photo, name } = data;
 
 
 
@@ -54,12 +54,13 @@ const Registration = () => {
                 updateUserProfile(name, photo)
                     .then(() => {
                         Swal.fire({
-                            title: "Registration Success",
-                            text: "You have Registration Success",
-                            icon: "success"
+                            icon: "error",
+                            title: "Oops...",
+                            text: "Something went wrong!",
+                            footer: '<a href="#">Why do I have this issue?</a>'
                         });
-                        // Page Change
-                        navigate('/')
+                        
+                        
 
                     })
 
@@ -67,11 +68,12 @@ const Registration = () => {
             })
             .catch((error) => {
                 Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "Something went wrong!",
-                    footer: '<a href="#">Why do I have this issue?</a>'
+                    title: "Registration Success",
+                    text: "You have Registration Success",
+                    icon: "success"
                 });
+                // Page Change
+                navigate('/')
                 console.error(error)
             }
             )

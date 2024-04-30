@@ -1,8 +1,18 @@
-# React + Vite
+# Asia Adventure Tourist Spot Management Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Asia Adventure Tourist Spot Management Website! This web application allows users to explore, add, and manage tourist spots across Asia. [Link](https://asiaadventure-rasel.surge.sh/)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Home:** The landing page of the website, providing an overview and navigation options.
+2. **All Tourist Spots:** Browse through a comprehensive list of tourist spots in Asia.
+3. **Add Tourist Spot:** Contribute by adding new tourist spots to the database.
+4. **My List:** Create and manage a personalized list of favorite tourist spots.
+5. **Login:** Access personalized features by logging into your account.
+6. **Registration:** New users can register for an account to unlock full website access.
+
+
+## Dependencies
+
+- [Lottie React](https://www.npmjs.com/package/lottie-react): Adds Lottie animations to React components.
+- [React-tooltip](https://www.npmjs.com/package/react-tooltip): Enables tooltips for elements in React applications.

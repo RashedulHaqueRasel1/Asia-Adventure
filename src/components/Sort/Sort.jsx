@@ -1,10 +1,10 @@
-
-// import { AuthContext } from "../Provider/AuthProvider";
-// import { useContext, useEffect, useState } from "react";
+ 
 
 
 
-// const Sort = () => {
+const Sort = ({d}) => {
+
+    console.log(d)
 
     // const { user } = useContext(AuthContext);
 
@@ -44,16 +44,16 @@
 
 
 
-//     return (
-        // <div className="mx-auto container items-center   mt-4 mb-4  text-2xl font-bold text-center    ">
-        //     <select className="select select-primary w-full max-w-xs">
-        //         <option disabled selected>Average Cost</option>
-        //         <option >AS</option>
-        //         <option onClick={() =>handleDs(ds)} >DS</option>
+    return (
+        <div className="mx-auto container items-center   mt-4 mb-4  text-2xl font-bold text-center    ">
+            <select className="select select-primary w-full max-w-xs">
+                <option disabled selected>Average Cost</option>
+                <option >AS</option>
+                <option >DS</option>
 
-        //     </select>
-        // </div>
-//     );
-// };
+            </select>
+        </div>
+    );
+};
 
-// export default Sort;
+export default Sort;
