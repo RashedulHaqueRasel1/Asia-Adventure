@@ -76,14 +76,6 @@ const AllTouristsSpot = () => {
 
 
 
-
-
-
-
-
-
-
-
     return (
         <div className="mx-auto container">
 
