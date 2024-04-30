@@ -101,7 +101,8 @@ const AllTouristsSpot = () => {
                 </select>
             </div>
 
-            
+            {/* Sort Data End */}
+
 
             <div className="grid md:grid-cols-3 gap-4">
 
