@@ -181,6 +181,7 @@ const Login = () => {
                     <button className="btn w-full hover:outline text-[16px] bg-purple-500 hover:bg-transparent text-white hover:text-black mr-3" data-aos="fade-up" data-aos-duration="3000">Sign in</button>
                     {/* <p>{logError}</p> */}
                 </form>
+                
                 <div className="flex items-center pt-4 space-x-1">
                     <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
                     <p className=" text-center sm:px-6 font-bold text-[14px] dark:text-gray-600">Login with social accounts</p>

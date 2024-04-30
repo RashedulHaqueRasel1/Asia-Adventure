@@ -3,7 +3,7 @@
 
 
 
-const AllTouristsSpotCard = ({ spot, spots, setSpots }) => {
+const AllTouristsSpotCard = ({ spot }) => {
 
 
     const { _id, email, name, photo, cost, visitors,description ,time ,seasonality} = spot;
@@ -24,7 +24,7 @@ const AllTouristsSpotCard = ({ spot, spots, setSpots }) => {
                             <div>
                                 <img src={photo} alt="" className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500 rounded-lg relative" data-aos="fade-up" data-aos-duration="3000" />
                                 <div className="">
-                                    <span className="absolute -mt-96 ml-80 text-white p-2 bg-red-600 rounded-full">{seasonality}</span>
+                                    <span className="absolute lg:-mt-96 lg:ml-80 text-white p-2 bg-red-600 rounded-full">{seasonality}</span>
                                 </div>
                                 <h2 className="mb-1 text-2xl font-semibold" data-aos="fade-up" data-aos-duration="2900">name{name}</h2>
                                 <h2 className="mb-1 text-2xl font-semibold" data-aos="fade-up" data-aos-duration="2900">cos{cost}</h2>
@@ -45,7 +45,6 @@ const AllTouristsSpotCard = ({ spot, spots, setSpots }) => {
                             <div>
                                 <div className="join join-vertical">
                                     <button className="btn join-item">View</button>
- 
  
                                 </div>
 

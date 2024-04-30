@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { RiDeleteBinLine } from "react-icons/ri";
+import { FaEdit } from "react-icons/fa";
 
-const MyListCard = ({ u }) => {
+const MyListCard = ({ u, spots, setSpots }) => {
 
     const { _id, photo, name, cost, visitors, description, time, seasonality, country, location } = u;
 
@@ -27,7 +29,7 @@ const MyListCard = ({ u }) => {
                         if (data.deletedCount > 0) {
                             Swal.fire({
                                 title: "Deleted!",
-                                text: "Your Coffee has been deleted.",
+                                text: "Your Tourists Spots has been deleted.",
                                 icon: "success"
                             });
                         }
@@ -49,22 +51,26 @@ const MyListCard = ({ u }) => {
     return (
         <div className="mx-auto container">
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto border border-blue-300 rounded-lg mt-4" >
                 <table className="table">
                     {/* head */}
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Country</th>
+                    <thead >
+                        <tr className="font-bold text-xl text-black">
+                            <div className="flex">
+                                <th>Img  </th>
+                                <th>Spot Name</th>
+                            </div>
+                            
+                            <th >Country</th>
                             <th>Cost</th>
                             <th>Visitors</th>
                             <th>Travel Time</th>
-                            <th>Time</th>
+                            <th>Update & Delete</th>
                         </tr>
                     </thead>
                     <tbody>
                         {/* row 1 */}
-                        <tr>
+                        <tr className="text-[16px]">
                             <td>
                                 <div className="flex items-center gap-3">
                                     <div className="avatar">
@@ -80,7 +86,7 @@ const MyListCard = ({ u }) => {
                             <td>
                                 {location}
                                 <br />
-                                <span className="badge badge-ghost text-black badge-sm">{country}</span>
+                                <span className="badge badge-ghost font-semibold text-black badge-sm">{country}</span>
                             </td>
                             <td>{cost}</td>
                             <td>{visitors}</td>
@@ -88,12 +94,13 @@ const MyListCard = ({ u }) => {
                                 <button className="  btn-xs">{time}</button>
                             </th>
                             <th>
-                                <div className="join join-vertical">
+                                <div className="inline-block">
 
                                     <Link to={`/spotsUpdate/${_id}`}>
-                                        <button className="btn btn-primary join-item">u</button>
+                                        <button className="btn w-full hover:outline text-[16px] text-4xl  bg-purple-500 hover:bg-transparent text-white hover:text-black  "  ><FaEdit></FaEdit> </button>
                                     </Link>
-                                    <button onClick={() => handleDelete(_id)} className="btn join-item">Delete</button>
+
+                                    <button onClick={() => handleDelete(_id)} className="btn w-full hover:outline text-[16px]   bg-purple-500 hover:bg-transparent text-white hover:text-black text-4xl"><RiDeleteBinLine ></RiDeleteBinLine></button>
                                 </div>
                             </th>
                         </tr>

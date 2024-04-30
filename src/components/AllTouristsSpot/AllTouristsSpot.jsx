@@ -1,11 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import AllTouristsSpotCard from "./AllTouristsSpotCard";
-import { useState } from "react";
+// import { useState } from "react";
 
 const AllTouristsSpot = () => {
 
-    const loaderSpots = useLoaderData();
-    const [spots, setSpots] = useState(loaderSpots);
+    const spots = useLoaderData();
+    // const [spots, setSpots] = useState(loaderSpots);
 
     // console.log(spots)
 
@@ -23,7 +23,7 @@ const AllTouristsSpot = () => {
                         key={spot._id} 
                         spot={spot}
                         coffees={spots}
-                        setCoffees={setSpots}
+
                         ></AllTouristsSpotCard>)
                 }
             </div>
