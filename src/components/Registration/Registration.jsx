@@ -9,7 +9,7 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const Registration = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, updateUserProfile } = useContext(AuthContext)
     const [errorPassword, setErrorPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
 
@@ -50,16 +50,20 @@ const Registration = () => {
 
         //  create user in fireBase
         createUser(email, password)
-            .then((userCredential) => {
+            .then((result) => {
+                updateUserProfile(name, photo)
+                    .then(() => {
+                        Swal.fire({
+                            title: "Registration Success",
+                            text: "You have Registration Success",
+                            icon: "success"
+                        });
+                        // Page Change
+                        navigate('/')
 
-                Swal.fire({
-                    title: "Registration Success",
-                    text: "You have Registration Success",
-                    icon: "success"
-                });
-                // Page Change
-                navigate('/')
-                console.log(userCredential.user)
+                    })
+
+                console.log(result.user)
             })
             .catch((error) => {
                 Swal.fire({
@@ -108,6 +112,16 @@ const Registration = () => {
 
 
                             <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Photo Url</span>
+                                </label>
+                                <input type="text" name="photo" placeholder="Your Photo Url" className="input input-bordered border-blue-300"   {...register("photo", { required: true })} />
+
+                            </div>
+                            {errors.photo && <span className="text-red-600 font-bold">This field is required.</span>}
+
+
+                            <div className="form-control">
                                 <label className="label ">
                                     <span className="label-text">Email</span>
                                 </label>
@@ -129,7 +143,7 @@ const Registration = () => {
                                         placeholder="password"
                                         name="password"
                                         // className=""
-                                      
+
                                         data-aos="fade-up" data-aos-duration="2900"
                                         {...register("password", { required: true })}
                                     />
@@ -154,7 +168,7 @@ const Registration = () => {
 
 
                             <div className="form-control mt-2">
-                            <button className="btn w-full hover:outline text-[16px] bg-purple-500 hover:bg-transparent text-white hover:text-black mr-3" data-aos="fade-up" data-aos-duration="3000">Registration</button>
+                                <button className="btn w-full hover:outline text-[16px] bg-purple-500 hover:bg-transparent text-white hover:text-black mr-3" data-aos="fade-up" data-aos-duration="3000">Registration</button>
                             </div>
                         </form>
                     </div>

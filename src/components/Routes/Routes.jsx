@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/AllTouristsSpot',
-        element: <PrivetRoute><AllTouristsSpot></AllTouristsSpot></PrivetRoute>,
+        element: <AllTouristsSpot></AllTouristsSpot>,
         loader: () => fetch('https://asia-adventura-server.vercel.app/spots'),
 
       },

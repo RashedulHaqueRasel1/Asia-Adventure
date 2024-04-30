@@ -13,7 +13,7 @@ const AllTouristsSpot = () => {
     // const { _id, email, name, photo, cost, visitors,description ,time ,seasonality} = spot;
     // const [spots, setSpots] = useState(loaderSpots);
 
-    // console.log(spots)
+    // console.log(spots.photo)
 
 
 
@@ -29,7 +29,7 @@ const AllTouristsSpot = () => {
     const [ds, setDs] = useState();
 
     // console.log('aaaaaaaaaa', as)
-    // console.log('ddddddddddddddd', ds)
+    console.log('ddddddddddddddd', ds)
 
     useEffect(() => {
         fetch(`https://asia-adventura-server.vercel.app/spots/as`)

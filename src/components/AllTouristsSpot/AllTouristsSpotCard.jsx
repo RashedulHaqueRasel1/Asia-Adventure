@@ -27,7 +27,7 @@ const AllTouristsSpotCard = ({ spot }) => {
 
                             <div className="card" >
                                 <figure className="px-10 pt-10">
-                                    <img src={photo} alt="Shoes" className="rounded-xl w-full md:w-48 lg:w-96 h-72 " />
+                                    <img src={photo} alt="Spot" className="rounded-xl w-full md:w-48 lg:w-96 h-72 " />
                                 </figure>
                                 <div className="card-body items-center text-center">
                                     <h2 className="card-title">{name}</h2>

@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react"
 import PropTypes from 'prop-types';
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth"
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth"
 import app from "../FireBase/FireBase.config.init";
 import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 
@@ -58,6 +58,14 @@ export default function AuthProvider({ children }) {
     }
 
 
+    // Update Profile
+    const userUpdateProfile = (name, img) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: img
+        })
+    }
+
+
     //  user Manage 
     useEffect(() => {
         const unSub = onAuthStateChanged(auth, currentUser => {
@@ -72,7 +80,7 @@ export default function AuthProvider({ children }) {
     }, [])
 
 
-    const authInfo = { user,loading, signInUser, createUser, logOut, singWithGoogle,singWithGithub }
+    const authInfo = { user, loading, signInUser, createUser, logOut, singWithGoogle, singWithGithub ,userUpdateProfile}
     // console.log('user',user)
 
 

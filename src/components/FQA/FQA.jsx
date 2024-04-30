@@ -26,7 +26,7 @@ const FQA = () => {
 
                         <div className="">
                             {/* <img class="  " src="Images/11.png" alt=""> */}
-                            <img className="w-[550px]" src='https://img.freepik.com/free-vector/thoughtful-woman-with-laptop-looking-big-question-mark_1150-39362.jpg?t=st=1714484010~exp=1714487610~hmac=68c2a297ae9d05799faf44d42bf89db7894ed5b604fa4a678c4286eac497ccfd&w=740' alt="" />
+                            <img className="w-[900px]" src='https://img.freepik.com/free-vector/thoughtful-woman-with-laptop-looking-big-question-mark_1150-39362.jpg?t=st=1714484010~exp=1714487610~hmac=68c2a297ae9d05799faf44d42bf89db7894ed5b604fa4a678c4286eac497ccfd&w=740' alt="" />
                         </div>
 
                     </div>
@@ -48,50 +48,46 @@ const FQA = () => {
                             <div className="collapse collapse-plus mt-4">
                                 <input type="radio" name="my-accordion-3" />
                                 <div className="collapse-title text-xl font-extrabold text-[#131318]">
-                                    Hockey Training
+                                What safety measures should I consider when going on an adventure trip in Asia?
                                 </div>
                                 <div className="collapse-content">
-                                    <p className="opacity-70 ">Official Game Pucks: Used in professional and amateur hockey games.</p>
+                                    <p className="opacity-70 ">It's essential to research and follow local safety guidelines, hire experienced guides for activities like trekking and climbing, ensure you have proper equipment, stay hydrated, and be aware of weather conditions.</p>
                                 </div>
                             </div>
                             <div className="collapse collapse-plus mt-4">
                                 <input type="radio" name="my-accordion-3" />
                                 <div className="collapse-title text-xl font-extrabold text-[#131318]">
-                                    Private Lessons
+                                How can I find reputable adventure tour operators in Asia?
                                 </div>
                                 <div className="collapse-content">
-                                    <p className="opacity-70">Console and PC Games: Virtual simulations allowing players to experience hockey
-                                        on-screen.</p>
+                                    <p className="opacity-70">Look for tour operators with positive reviews and certifications, such as membership in adventure travel associations. Ask for recommendations from fellow travelers or use online platforms that specialize in adventure travel.</p>
                                 </div>
                             </div>
                             <div className="collapse collapse-plus  mt-4">
                                 <input type="radio" name="my-accordion-3" />
                                 <div className="collapse-title text-xl font-extrabold text-[#131318]">
-                                    Ski Touring
+                                What are some popular adventure activities for families in Asia?
                                 </div>
                                 <div className="collapse-content">
-                                    <p className="opacity-70 ">Stickhandling Aids: Such as synthetic ice or stickhandling balls for skill
-                                        development.</p>
+                                    <p className="opacity-70 "> Family-friendly adventure activities in Asia include snorkeling in the Philippines, wildlife safaris in Sri Lanka, and cycling tours in Vietnam's countryside.</p>
                                 </div>
                             </div>
                             <div className="collapse collapse-plus  mt-4">
                                 <input type="radio" name="my-accordion-3" />
                                 <div className="collapse-title text-xl font-extrabold  text-[#131318]">
-                                    Booking
+                                Are there any eco-friendly adventure options in Asia?
                                 </div>
                                 <div className="collapse-content">
-                                    <p className="opacity-70 ">Subscription Services: Access to live streaming, exclusive content, or
-                                        behind-the-scenes footage.</p>
+                                    <p className="opacity-70 ">Yes, many eco-friendly adventure options exist in Asia, such as sustainable trekking in the Annapurna region of Nepal, wildlife conservation projects in Borneo, and responsible diving in the Coral Triangle.</p>
                                 </div>
                             </div>
                             <div className="collapse collapse-plus  mt-4">
                                 <input type="radio" name="my-accordion-3" />
                                 <div className="collapse-title text-xl font-extrabold  text-[#131318]">
-                                    Pricings
+                                How can I ensure responsible tourism while enjoying adventure activities in Asia?
                                 </div>
                                 <div className="collapse-content">
-                                    <p className="opacity-70 ">Virtual Reality (VR) Training: Simulations for players to practice in a virtual
-                                        environment.</p>
+                                    <p className="opacity-70 ">Practice Leave No Trace principles, respect local customs and traditions, support local communities by choosing sustainable tour operators and purchasing locally made souvenirs, and minimize your environmental impact by reducing waste and conserving resources.</p>
                                 </div>
                             </div>
 
