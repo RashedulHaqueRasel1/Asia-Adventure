@@ -59,9 +59,10 @@ export default function AuthProvider({ children }) {
 
 
     // Update Profile
-    const userUpdateProfile = (name, img) => {
+    const updateUserProfile = (name, image) => {
         return updateProfile(auth.currentUser, {
-            displayName: name, photoURL: img
+            displayName: name,
+            photoURL: image
         })
     }
 
@@ -80,7 +81,7 @@ export default function AuthProvider({ children }) {
     }, [])
 
 
-    const authInfo = { user, loading, signInUser, createUser, logOut, singWithGoogle, singWithGithub ,userUpdateProfile}
+    const authInfo = { user, loading, signInUser, createUser, logOut, singWithGoogle, singWithGithub , updateUserProfile}
     // console.log('user',user)
 
 

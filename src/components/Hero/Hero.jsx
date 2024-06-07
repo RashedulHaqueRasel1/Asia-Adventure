@@ -9,13 +9,13 @@ import 'animate.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// import 'animate.css';
-// import './styles.css';
+import 'animate.css';
+import './styles.css';
 
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import './styles.css';
+
 
 // import banner2 from '../../assets/banner2.jpg'
 

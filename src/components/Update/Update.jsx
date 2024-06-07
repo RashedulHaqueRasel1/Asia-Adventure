@@ -75,7 +75,7 @@ const Update = () => {
                                 <span className="label-text font-bold">Spots Name</span>
                             </label>
                             <div>
-                                <input type="text" name="name" id="name" defaultValue={user.displayName} className="input input-bordered lg:w-[600px] w-full    border-blue-300   focus:dark:border-blue-500 dark:bg-gray-400"  {...register("name", { required: true })} />
+                                <input type="text" name="name" id="name" defaultValue={user.name} className="input input-bordered lg:w-[600px] w-full    border-blue-300   focus:dark:border-blue-500 dark:bg-gray-400"  {...register("name", { required: true })} />
                             </div>
                             {errors.name && <span className="text-red-600 font-bold">This field is required</span>}
 

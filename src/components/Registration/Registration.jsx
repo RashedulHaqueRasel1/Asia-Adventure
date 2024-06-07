@@ -9,7 +9,7 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const Registration = () => {
 
-    const { createUser, updateUserProfile } = useContext(AuthContext)
+    const { createUser , updateUserProfile } = useContext(AuthContext)
     const [errorPassword, setErrorPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
 
@@ -52,6 +52,7 @@ const Registration = () => {
         createUser(email, password)
             .then((result) => {
                 updateUserProfile(name, photo)
+                console.log(result.user)
                     .then(() => {
                         Swal.fire({
                             icon: "error",
@@ -64,7 +65,7 @@ const Registration = () => {
 
                     })
 
-                console.log(result.user)
+                // console.log(result.user)
             })
             .catch((error) => {
                 Swal.fire({

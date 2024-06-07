@@ -38,6 +38,7 @@ const Nav = () => {
         {user && <>
             <li><NavLink to={'/AddTouristsSpot'}>Add Tourists Spot</NavLink></li>
             <li><NavLink to={'/myList'}>My List</NavLink></li>
+            {/* <li><NavLink to={'/countryDetails'}>Card</NavLink></li> */}
         </>
 
         }
@@ -88,18 +89,28 @@ const Nav = () => {
                                         <svg className="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                                     </label>
 
-                                    <div className="dropdown dropdown-end tooltip tooltip-left" data-tip={user.displayName}>
-                                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                    {/* Dark Mood End */}
+
+
+                                    <div className="dropdown dropdown-end">
+                                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-left" data-tip={user.displayName} >
                                             <div className="w-10 rounded-full " >
                                                 <img alt="Tailwind CSS Navbar component" src={user.photoURL || 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'} />
                                             </div>
                                         </div>
-                                    </div>
-                                    <button onClick={handleLogOut} className="btn bg-purple-500 hover:bg-transparent text-white hover:text-black " >
+                                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <Link to={'/myList'}>
+                                                <button className="btn w-full  bg-purple-500 hover:bg-transparent text-white hover:text-black " >
+                                                    My List
+                                                </button>
+                                            </Link>
+                                            <button onClick={handleLogOut} className="btn bg-purple-500 hover:bg-transparent text-white hover:text-black " >
 
-                                        LogOut
-                                        <IoIosLogOut></IoIosLogOut>
-                                    </button>
+                                                LogOut
+                                                <IoIosLogOut></IoIosLogOut>
+                                            </button>
+                                        </ul>
+                                    </div>
                                 </>
 
                                 :

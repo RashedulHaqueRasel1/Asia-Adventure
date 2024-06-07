@@ -86,14 +86,12 @@ const MyListCard = ({ u, spots, setSpots }) => {
                                 </div>
                             </td>
                             <td>
-                                {location}
-                                <br />
-                                <span className="badge badge-ghost font-semibold text-black badge-sm">{country}</span>
+                                <span className="   font-semibold text-black  ">{country}</span>
                             </td>
-                            <td>{cost}</td>
+                            <td>{cost} Tk</td>
                             <td>{visitors}</td>
                             <th>
-                                <button className="  btn-xs">{time}</button>
+                                <button className="  btn-xs">{time} Hour</button>
                             </th>
                             <th>
                                 <div className="inline-block">
