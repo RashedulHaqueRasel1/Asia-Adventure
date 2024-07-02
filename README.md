@@ -16,3 +16,26 @@ Welcome to the Asia Adventure Tourist Spot Management Website! This web applicat
 
 - [Lottie React](https://www.npmjs.com/package/lottie-react): Adds Lottie animations to React components.
 - [React-tooltip](https://www.npmjs.com/package/react-tooltip): Enables tooltips for elements in React applications.
+
+
+
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+## Installation
+
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/RashedulHaqueRasel1/Asia-Adventure.git
+
+2. Install all dependencies:
+   
+   ```sh
+    npm install
+   
+3. Live Preview
+To run the project locally and see a live preview:
+```sh
+  npm run dev
