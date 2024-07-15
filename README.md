@@ -48,12 +48,17 @@ To get a local copy up and running, follow these simple steps.
    ```sh
    git clone https://github.com/RashedulHaqueRasel1/Asia-Adventure.git
 
-2. Install all dependencies:
+2. Navigate to the project directory:
+   ```sh
+   cd Asia-Adventure
+
+
+3. Install all dependencies:
    
    ```sh
     npm install
    
-3. Live Preview
+4. Live Preview
 To run the project locally and see a live preview:
 ```sh
   npm run dev
